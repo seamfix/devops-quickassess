@@ -1,0 +1,9 @@
+logger:
+    level: DEBUG
+
+swarm:
+    port:
+        offset: 0
+    deployment:
+        timeout: 1500
+            

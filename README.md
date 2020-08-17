@@ -1,2 +1,3 @@
-# devops-quickassess
-Quick Assessment for DevOps Engineer
+# peter-sre
+
+SRE assessment for Peter
