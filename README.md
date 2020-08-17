@@ -1,3 +1,3 @@
-# peter-sre
+# devops-quickassess
 
-SRE assessment for Peter
+SRE assessment for Fatoki
