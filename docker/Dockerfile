@@ -1,7 +1,10 @@
-FROM openjdk:jre-alpine
-​
-COPY target/*-thorntail.jar /opt/assessment-thorntail.jar
-​
-EXPOSE 8080
-​
+FROM node:10
+
+MAINTAINER devops@seamfix.com
+RUN mkdir /var/app/
+WORKDIR /var/app/
+COPY target/*-thorntail.jar /opt/
+
+EXPOSE 8081
+
 ENTRYPOINT ["java", "-jar", "/opt/assessment-thorntail.jar"]
