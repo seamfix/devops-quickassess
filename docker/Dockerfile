@@ -1,10 +1,9 @@
-FROM node:10
+FROM openjdk:8-jdk-slim
 
 MAINTAINER devops@seamfix.com
-RUN mkdir /var/app/
-WORKDIR /var/app/
-COPY target/*-thorntail.jar /opt/
+WORKDIR /opt/
+COPY target/*-thorntail.jar /opt/assessment-thorntail.jar
 
-EXPOSE 8081
+EXPOSE 8080
 
 ENTRYPOINT ["java", "-jar", "/opt/assessment-thorntail.jar"]
